@@ -92,21 +92,7 @@ function FormSubmitComponent({ formUrl, content }: { content: FormElementInstanc
             />
           );
         })}
-        <Button
-          className="mt-8"
-          onClick={() => {
-            startTransition(submitForm);
-          }}
-          disabled={pending}
-        >
-          {!pending && (
-            <>
-              <HiCursorClick className="mr-2" />
-              Submit
-            </>
-          )}
-          {pending && <ImSpinner2 className="animate-spin" />}
-        </Button>
+        
       </div>
     </div>
   );
